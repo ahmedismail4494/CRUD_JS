@@ -1,0 +1,293 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: #999;
+  background-color: #111;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  background-color: #000;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #004;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  letter-spacing: 1.5px;
+  background-color: #01018a;
+}
+
+body {
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+  background-color: #222;
+  color: #fff;
+}
+
+body .crud {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .crud .container {
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px;
+  overflow: hidden;
+  /* Small */
+  /* Medium */
+}
+
+@media (max-width: 767px) {
+  body .crud .container {
+    width: 90%;
+    margin: 0px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  body .crud .container {
+    width: 90%;
+  }
+}
+
+body .crud .container .head {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body .crud .container .head h1 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+body .crud .container .head p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+body .crud .container .inputs {
+  width: 100%;
+}
+
+body .crud .container .inputs .price {
+  width: 100%;
+  overflow: hidden;
+}
+
+body .crud .container .inputs .price input {
+  width: 20%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: #999;
+  background-color: #111;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body .crud .container .inputs .price input:focus {
+  background-color: #000;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+body .crud .container .inputs .price small {
+  display: inline-block;
+  min-width: 130px;
+  height: 40px;
+  color: #999;
+  margin: 5px 0;
+  padding: 10px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: red;
+  /* Small */
+  /* Medium */
+}
+
+@media (max-width: 767px) {
+  body .crud .container .inputs .price small {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  body .crud .container .inputs .price small {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+  }
+}
+
+body .crud .container .inputs .price small::before {
+  content: "Total: ";
+}
+
+body .crud .container .outputs {
+  width: 100%;
+}
+
+body .crud .container .outputs .searchBlock {
+  width: 100%;
+  overflow: hidden;
+}
+
+body .crud .container .outputs .searchBlock .btnSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .crud .container .outputs .searchBlock .btnSearch button {
+  width: 45%;
+}
+
+body .crud .container .outputs #btnDeletAll {
+  width: 100%;
+  overflow: hidden;
+}
+
+body .crud .container .outputs #btnDeletAll button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0px;
+  background-color: #004;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body .crud .container .outputs #btnDeletAll button:hover {
+  letter-spacing: 1.5px;
+  background-color: #01018a;
+}
+
+body .crud .container .outputs table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+body .crud .container .outputs table tr {
+  width: 100%;
+  overflow: hidden;
+}
+
+body .crud .container .outputs table tr th {
+  text-transform: uppercase;
+  padding: 5px;
+  /* Small */
+  /* Medium */
+}
+
+@media (max-width: 767px) {
+  body .crud .container .outputs table tr th:nth-child(4), body .crud .container .outputs table tr th:nth-child(5), body .crud .container .outputs table tr th:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  body .crud .container .outputs table tr th:nth-child(4), body .crud .container .outputs table tr th:nth-child(5), body .crud .container .outputs table tr th:nth-child(6) {
+    display: none;
+  }
+}
+
+body .crud .container .outputs table #tbody {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+body .crud .container .outputs table #tbody tr {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+body .crud .container .outputs table #tbody tr th {
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 5px;
+  /* Small */
+  /* Medium */
+}
+
+body .crud .container .outputs table #tbody tr th button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #004;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body .crud .container .outputs table #tbody tr th button:hover {
+  letter-spacing: 1.5px;
+  background-color: #01018a;
+}
+
+@media (max-width: 767px) {
+  body .crud .container .outputs table #tbody tr th:nth-child(4), body .crud .container .outputs table #tbody tr th:nth-child(5), body .crud .container .outputs table #tbody tr th:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  body .crud .container .outputs table #tbody tr th:nth-child(4), body .crud .container .outputs table #tbody tr th:nth-child(5), body .crud .container .outputs table #tbody tr th:nth-child(6) {
+    display: none;
+  }
+}
+
+/*  Start ..... Rules  */
+/* Small */
+/* Medium */
+/* Large */
+/*  End ..... Rules  */
+/*# sourceMappingURL=style.css.map */
